@@ -18,6 +18,7 @@ EXTRA_OECMAKE += " \
     -DBUILD_GRAPHICAL_EXAMPLES:BOOL=OFF \
     -DBUILD_WITH_TM2:BOOL=OFF \
 "
+do_configure[network] = "1"
 
 do_install() {
     install -d ${D}/${PYTHON_SITEPACKAGES_DIR}/pyrealsense2
